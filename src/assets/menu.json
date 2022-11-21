@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Horse Burger",
+    "kCal": "(900 kCal)",
+    "lactose": false,
+    "gluten": true,
+    "URL": "https://cdn.vox-cdn.com/thumbor/T0RlaoK59LlxsLWLMXh-3bt9eYY=/6x0:493x365/1400x1050/filters:focal(6x0:493x365):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/39001100/horse-hamburger.0.jpg",
+    "purePower": false,
+    "info": "Frequently updated menu item, depending on what animals we find on our way to work"
+  },
+
+  {
+    "name": "Praise Space",
+    "kCal": "(300-20000000 kCal)",
+    "lactose": false,
+    "gluten": true,
+    "URL": "https://i.gifer.com/TL02.gif",
+    "purePower": true,
+    "info": "Honestly we can't tell you what power it holds"
+  },
+
+  {
+    "name": "The Never-ending-story",
+    "kCal": "(NaN kCal)",
+    "lactose": true,
+    "gluten": true,
+    "URL": "https://64.media.tumblr.com/c5561d38c584491f8c67b3620053ac11/tumblr_p0ex9jD1xm1wbfl3po2_1280.gifv",
+    "purePower": false,
+    "info": "This will bankrupt our business, but also you will never receive it"
+  }
+]

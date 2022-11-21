@@ -1,12 +1,13 @@
 <template>
     <div id="orders">
       <div id="orderList">
-        <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+        <div v-for="(order,key) in orders" v-bind:key="'order'+key">
+          #{{key}}: Order: {{order.orderedItems}}
+          <dd>Contact info: <br>Full name: {{order.details.firstname}} <br>E-mail: {{order.details.email}}<br>Gender: {{order.details.gender}}<br>Payment option: {{order.details.paymentInfo}}<hr></dd>
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
-      <div id="dots" v-bind:style="{ background: 'url(' + require('../../public/img/polacks.jpg')+ ')' }">
+      <div id="dots" v-bind:style="{ background: 'url(' + require('../../public/img/observableUniverse.jpg')+ ')' }">
           <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
             {{ key }}
           </div>
@@ -25,7 +26,7 @@
       }
     },
     created: function () {
-      socket.on('currentQueue', data =>
+      socket.on('currentQueue', data => //{orders: {...}}
         this.orders = data.orders);
     },
     methods: {
@@ -41,8 +42,8 @@
     left:1em;
     position: absolute;
     z-index: 2;
-    color:black;
-    background: rgba(255,255,255, 0.5);
+    color:white;
+    background: rgb(70, 0, 42, 40%);
     padding: 1em;
   }
   #dots {
@@ -54,15 +55,6 @@
     height: 1078px;
     cursor: crosshair;
   }
-  
-  #dots div {
-    position: absolute;
-    background: black;
-    color: white;
-    border-radius: 10px;
-    width:20px;
-    height:20px;
-    text-align: center;
-  }
+  hr {width: 100%; height: 0px; margin-left: auto; margin-right: auto;}
   </style>
-  
+

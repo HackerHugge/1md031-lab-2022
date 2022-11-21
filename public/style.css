@@ -1,1 +1,128 @@
-/*empty*/
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Share+Tech+Mono");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+@media screen and (max-width: 800px) {
+        font-size: 6vw;
+}
+
+body {
+    font-family: "Times New Roman", Lobster;
+    font-size: 11pt;
+    background-color: rgb(70, 0, 42);
+}
+
+a, strong, em {
+    color: #0099ff;
+}
+
+.imgAndHeader{
+    overflow: hidden;
+    background:linear-gradient(to bottom, rgba(99, 0, 75, 0) 10%, rgba(74, 0, 63, 0.1) 40%, rgba(116, 0, 116, 0.5) 75%, rgba(41, 0, 36, 0) 100%) repeat scroll 0 0;
+}
+#imgHeader {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    
+    opacity: 50%;
+    text-align: center;
+    color:white;
+
+}
+#header {
+    font-family: Lobster;
+    width: 100%;
+    height: auto;
+    margin-top: -200px;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+h1{
+    font-size: 2cm;
+}
+#secondHeader {
+    position: relative;
+    font-family: Lobster;
+    color: white;
+    margin-top: -75px;
+    text-align: center;
+}
+#initialImperative {
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    margin-top: 50px;
+    text-align: center;
+}
+.wrapper {
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 300px 300px 300px;
+    background-color: rgb(43, 0, 41);
+
+    color: rgb(43, 0, 41);
+}
+
+.box {
+    background-color: rgb(43, 0, 41);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+}
+
+.burgarval{
+    font-weight: bold;
+    color: rgb(255,247,0);
+    border: 5px dashed rgb(102, 46, 151);
+}
+#burgarval{
+    background-color: rgb(43, 0, 41);
+    margin-top: 0px;
+    text-align: center;
+}
+div{
+    padding-block: 20px;
+    text-align: center;
+}
+li{
+    text-align: left;
+    margin-right: 30px;
+}
+p.info,
+#login p {
+    width: 80%;
+    margin: 1vw auto;
+}
+p{  
+    color: white;
+}
+
+#contact {
+    margin-top: 20px;
+    color: white;
+}
+
+footer{
+    color: white;
+}
+
+ #laktos {
+    color: red;
+    text-transform: uppercase;
+ }
+ #gluten {
+    color: red;
+    text-transform: uppercase;
+ }
+ #vego {
+    color: rgb(102, 46, 151);
+    text-transform: uppercase;
+ }
+
+ button:hover {
+    color: rgb(119, 0, 77);
+    cursor: pointer;
+ }
